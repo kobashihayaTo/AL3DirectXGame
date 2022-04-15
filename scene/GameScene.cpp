@@ -36,6 +36,7 @@ void GameScene::Initialize() {
 }
 
 void GameScene::Update() { 
+	//デバックテキストの表示
 	
 }
 
