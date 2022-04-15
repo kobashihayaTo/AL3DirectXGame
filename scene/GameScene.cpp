@@ -37,7 +37,12 @@ void GameScene::Initialize() {
 
 void GameScene::Update() { 
 	//デバックテキストの表示
-	
+	debugText_->SetPos(50, 70);
+	debugText_->Printf("translation;(%f,%f,%f)\n", 10.0f, 10.0f, 10.0f);
+	debugText_->SetPos(50, 90);
+	debugText_->Printf("rolation:(%f,%f,%f)\n\n", XM_PI / 4.0f, XM_PI / 4.0f, 0.0f);
+	debugText_->SetPos(50, 110);
+	debugText_->Printf("scale(%f,%f,%f)\n\n\n", 5.0f, 5.0f, 5.0f);
 }
 
 void GameScene::Draw() {
