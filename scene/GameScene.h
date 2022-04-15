@@ -18,12 +18,14 @@ class GameScene {
 
 	//スプライト
 	Sprite* sprite_ = nullptr;
-	//3Dモデル
+	// 3Dモデル
 	Model* model_ = nullptr;
 	//ワールドトランスフォーム
-	WorldTransform worldTransform_;
+	WorldTransform worldTransform_[100];
 	//ビュープロダクション
 	ViewProjection viewProjection_;
+	//カメラ上方向の角度
+	float viewAngle = 0.0f;
 
   public: // メンバ関数
 	/// <summary>
@@ -59,6 +61,7 @@ class GameScene {
 
 	//テクスチャハンドル
 	uint32_t textureHandle_ = 0;
+
 	/// <summary>
 	/// ゲームシーン用
 	/// </summary>
