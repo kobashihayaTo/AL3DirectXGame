@@ -21,10 +21,11 @@ class GameScene {
 	//3Dモデル
 	Model* model_ = nullptr;
 	//ワールドトランスフォーム
-	WorldTransform worldTransform_;
+	WorldTransform worldTransform_[100];
 	//ビュープロダクション
 	ViewProjection viewProjection_;
-
+	//カメラ上方向の角度
+	float viewAngle = 0.0f;
   public: // メンバ関数
 	/// <summary>
 	/// コンストクラタ
