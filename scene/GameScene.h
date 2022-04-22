@@ -27,6 +27,19 @@ class GameScene {
 	//カメラ上方向の角度
 	float viewAngle = 0.0f;
 
+public:
+
+	enum PartId {
+		Root,
+		Spine,
+		Chest,
+		Head,
+		ArmL,
+		ArmR,
+		Hip,
+		LegL,
+		LegR,
+	};
   public: // メンバ関数
 	/// <summary>
 	/// コンストクラタ
